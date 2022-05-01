@@ -1,0 +1,24 @@
+.door-frame {
+    width: 100px;
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+
+.door-space {
+    box-sizing: border-box;
+    width: 90px;
+    height: 150px;
+    border-top: 3px solid brown;
+    border-left: 3px solid brown;
+    border-right: 3px solid brown;
+    background: rgba(31, 35, 255, 0.4);
+}
+
+.door-base {
+    width: 100%;
+    height: 5px;
+    background-color: lightgrey;
+}
