@@ -1,21 +1,23 @@
-import useDoor from '../hooks/useDoor'
+import styles from '../styles/DoorFrame.module.css'
 import Door from './Door'
-import './DoorFrame.css'
 import DoorKnob from './DoorKnob'
+import useDoor from '../hooks/useDoor'
+import useSelectDoor from '../hooks/useSelectDoor'
 
 
 export default function DoorFrame(props) {
     
     const { doorIsClosed, openDoor } = useDoor()
+    const {isSelected, toggleSelectDoor } = useSelectDoor()
 
     return (
-        <div className="door-frame" onClick={props.onClick}>
-            <div className={`door-space ${props.className}`}>
+        <div className={styles.doorFrame} onClick={() => toggleSelectDoor()}>
+            <div className={`${styles.doorSpace} ${isSelected ? styles.selected : null}`}>
                 { doorIsClosed ? (<Door>
-                    <DoorKnob className={props.className} onClick={() => openDoor()}/>
+                    <DoorKnob selected={isSelected ? true : false} onClick={() => openDoor()}/>
                 </Door>) : <div /> }
             </div>
-            <div className="door-base"></div>
+            <div className={styles.doorBase}></div>
         </div>        
     )
 }

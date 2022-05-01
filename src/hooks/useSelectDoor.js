@@ -9,8 +9,10 @@ export default function useSelectDoor() {
     function toggleSelectDoor() {
         if (isSelected) {
             setIsSelected(false)
+            console.log(false)
         } else {
             setIsSelected(true)
+            console.log(true)
         }
     }
 

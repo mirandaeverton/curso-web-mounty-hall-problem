@@ -1,12 +1,9 @@
 import DoorFrame from '../components/DoorFrame';
-import useSelectDoor from '../hooks/useSelectDoor'
 
-export default function MainPage(props) {
-    const {isSelected, toggleSelectDoor, selectDoor, unselectDoor} = useSelectDoor()
+export default function MainPage(props) { 
     return (
         <div>
-            <DoorFrame className={isSelected ? 'selected' : null} 
-            onClick={() => toggleSelectDoor()}/>
+            <DoorFrame />
         </div>
     )
 }

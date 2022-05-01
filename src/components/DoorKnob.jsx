@@ -1,7 +1,9 @@
-import './DoorKnob.css'
+import styles from '../styles/DoorKnob.module.css'
 
 export default function DoorKnob(props) {
     return (
-        <button className={`door-knob ${props.className}`} onClick={props.onClick}></button>
+        <button className={`${styles.doorKnob} ${props.selected ? styles.selected : null}`} 
+            onClick={props.onClick}>
+        </button>
     )
 }

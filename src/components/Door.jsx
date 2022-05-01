@@ -1,8 +1,8 @@
-import './Door.css'
+import styles from '../styles/Door.module.css'
 
 export default function Door(props) {
     return (
-        <div className="door">
+        <div className={styles.door}>
             {props.children}
         </div>
     )

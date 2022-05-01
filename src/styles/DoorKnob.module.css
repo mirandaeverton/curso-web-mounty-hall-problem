@@ -1,4 +1,4 @@
-.door-knob {
+.doorKnob {
     background-color: brown;
     border: 3px solid brown;
     border-radius: 50%;
@@ -6,7 +6,7 @@
     padding: 2px;
 }
 
-.selected button {
+.selected {
     background-color: yellow;
     border: 3px solid yellow;
 }
