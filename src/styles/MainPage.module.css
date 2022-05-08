@@ -1,0 +1,14 @@
+.mainPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+
+.doors {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-around;
+  }
