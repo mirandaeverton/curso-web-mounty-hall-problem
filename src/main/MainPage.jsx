@@ -47,11 +47,11 @@ export default function MainPage(props) {
                     buttonTitle="Reiniciar"
                 />
             }
-            {initGame ?
+            {initGame ? 
                 <Doors 
-                    numberOfDoors={numberOfDoors}
+                    numberOfDoors={numberOfDoors} 
                     presentDoor={presentDoor}
-                />
+                /> 
                 : null
             }
         </div>
